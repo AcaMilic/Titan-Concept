@@ -89,6 +89,7 @@ nav {
     }
 
     .logo {
+        width: 40%;
         position: absolute;
         text-align: left;
         margin: 4rem auto;
@@ -97,7 +98,7 @@ nav {
         // transition: color 0.4s ease-in-out;
 
         img{
-            max-width: 15%;
+            width: 40%;
         }
         @include respond(tab-port) {
           top: 0rem;
