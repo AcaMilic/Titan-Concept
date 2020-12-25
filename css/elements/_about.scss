@@ -18,6 +18,14 @@
     p {
       color: $color-primary-dark;
     }
+    
+  @include respond(tab-land) {
+    margin-left: 6rem;
+  } 
+  @include respond(tab-port) {
+
+    margin: 0;
+  } 
   }
 
   .heading-secondary {
@@ -29,16 +37,16 @@
   }
   .logo_titan{
     img{
-      max-width: 90%;
-      margin-left: 15rem;
+      max-width: 100%;
+      // margin-left: 15rem;
 
       @include respond(tab-land) {
-        width: 75%;
+        width: 80%;
         margin-top: 6rem;
       } 
       @include respond(tab-port) {
         width: 100%;
-        margin: 0rem;
+        // margin: 0;
       } 
     }
 
@@ -55,3 +63,54 @@
   }
 
 }
+.about_us{
+  margin: 15rem 0 25rem 0;
+  .intro {
+    position: relative;
+    .bg-faded {
+      background-image: linear-gradient(to right bottom,
+      rgba($color-primary-dark, 0.9),
+      rgba($color-black, 0.8));
+    }
+    .content{
+      p{
+        text-align: left;
+        color: $color-grey-light-1;
+        font-size: 1.2rem;
+        margin-bottom: 2.6rem;
+      }
+    }
+    @media (min-width: 992px) {
+      .intro-img {
+        box-shadow: 1.2rem 1.5rem 2rem rgba(0, 34, 62, 0.2);
+        width: 80%;
+        float: right;
+        transition: .3s ease-in-out;
+
+        &:hover{
+        box-shadow: .6rem .6rem .6rem rgba(0, 34, 62, 0.2);
+          
+        }
+      }
+      .intro-text {
+        left: 0;
+        width: 60%;
+        margin-top: 9rem;
+        position: absolute;
+
+        .intro-button {
+          width: 100%;
+          left: 0;
+          position: absolute;
+          bottom: -2rem;
+          text-decoration: none;
+        }
+      }
+    }
+  
+  }
+  
+
+}
+
+

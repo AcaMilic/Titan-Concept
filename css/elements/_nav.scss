@@ -1,3 +1,6 @@
+.about_nav{
+    background: transparent;
+}
 .menu {
     height: 12rem;
 
@@ -55,9 +58,11 @@ nav {
         }
 
         li {
+            text-decoration: none;
             margin-top: 2.3rem;
             display: inline-block;
             padding: 2rem 3.4rem;
+
 
             @include respond(tab-port) {
                 box-sizing: border-box;
@@ -83,25 +88,27 @@ nav {
 
                 &:hover {
                     color: $color-primary-light;
+                    text-decoration: none;
                 }
             }
         }
     }
 
     .logo {
+        width: 25%;
         position: absolute;
         text-align: left;
-        // margin: 2rem auto;
+        margin: 5rem auto;
         // animation: moveInLeftLogo 2s ease-in-out;
         // animation-delay: 2s;
         // transition: color 0.4s ease-in-out;
 
         img{
-            max-width: 30%;
+            width: 40%;
         }
         @include respond(tab-port) {
-          top: 0rem;
-           width: 20rem;
+          top: -1rem;
+        //    width: 20rem;
            margin-left:2rem;
         }
     }
