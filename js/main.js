@@ -138,5 +138,12 @@ $(document).ready(function () {
   $(".menu-icon").on("click", function () {
     $("nav ul").toggleClass("showing");
   });
+  
 
+});
+
+$(document).ready(function(){
+  $(".services-hover").hover(function(){
+    $(".services-links").slideDown();
+  });
 });
