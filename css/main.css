@@ -3115,6 +3115,26 @@ nav .menu-icon {
   padding: .5rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .gallery_wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery_wrapper {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    position: relative;
+    height: auto;
+  }
+}
+
 .gallery_wrapper .box {
   background: #00223e;
   background-size: cover;
@@ -3128,10 +3148,40 @@ nav .menu-icon {
   background-image: url(../../img/archive.jpg);
 }
 
+@media only screen and (max-width: 56.25em) {
+  .gallery_wrapper .one {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery_wrapper .one {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
+}
+
 .gallery_wrapper .two {
   grid-column: span 2;
   grid-row: span 2;
   background-image: url(../../img/architecture2.jpg);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .gallery_wrapper .two {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery_wrapper .two {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
 }
 
 .gallery_wrapper .three {
@@ -3144,6 +3194,21 @@ nav .menu-icon {
   background-image: url(../../img/architecture3.jpg);
 }
 
+@media only screen and (max-width: 56.25em) {
+  .gallery_wrapper .three {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery_wrapper .three {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
+}
+
 .gallery_wrapper .four {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -3152,6 +3217,21 @@ nav .menu-icon {
   -ms-grid-row-span: 2;
   grid-row: 4 / span 2;
   background-image: url(../../img/architecture4.jpg);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .gallery_wrapper .four {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery_wrapper .four {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
 }
 
 .gallery_wrapper .five {
@@ -3164,9 +3244,39 @@ nav .menu-icon {
   background-image: url(../../img/archivee.jpg);
 }
 
+@media only screen and (max-width: 56.25em) {
+  .gallery_wrapper .five {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery_wrapper .five {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
+}
+
 .gallery_wrapper .six {
   grid-column: span 3;
   grid-row: span 2;
   background-image: url(../../img/tree.jpg);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .gallery_wrapper .six {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gallery_wrapper .six {
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
