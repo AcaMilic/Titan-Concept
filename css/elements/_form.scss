@@ -15,13 +15,13 @@
 
     .heading-secondary-medium {
         background-image: linear-gradient(to right,
-            $color-primary,
-            $color-primary-light);
+                $color-primary,
+                $color-primary-light);
 
         @include respond(tab-port) {
             background-image: linear-gradient(to right,
-                $color-white,
-                $color-primary-light);
+                    $color-white,
+                    $color-primary-light);
         }
     }
 
@@ -123,33 +123,33 @@
     //     rgba($color-primary-dark, .8) 50%,
     //     transparent 50%),
     //     url(../img/architecture3.jpg);
-    background-image: linear-gradient(105deg, 
-    rgba(0, 0, 0, 0.9) 0%, 
-    rgba(0, 34, 62, 0.8) 30%,
-     transparent 58%), 
-     url(../img/architecture3.jpg);
+    background-image: linear-gradient(105deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 34, 62, 0.8) 30%,
+            transparent 58%),
+        url(../img/architecture3.jpg);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 1.2rem 1.5rem 4rem rgba($color-primary-dark, .4);
 
     @include respond(tab-land) {
         background-image: linear-gradient(105deg,
-            rgba($color-black, .9) 0%,
-            rgba($color-black, .7) 65%,
-            transparent 65%),
+                rgba($color-black, .9) 0%,
+                rgba($color-black, .7) 65%,
+                transparent 65%),
             url(../img/laptop.jpg);
         background-size: cover;
     }
 
     @include respond(tab-port) {
         background-image: linear-gradient(to right,
-            rgba($color-primary-dark, .7) 0%,
-            rgba($color-black, .5) 100%),
+                rgba($color-primary-dark, .7) 0%,
+                rgba($color-black, .5) 100%),
             url(../img/contactsmall.jpg);
     }
 
     &__form {
-        width: 50%;
+        // width: 50%;
         padding: 6rem;
 
         @include respond(tab-land) {
@@ -170,10 +170,11 @@
 .section-form {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom,
-        rgba($color-grey-light-1, 0.1),
-        rgba($color-grey-dark-3, 0.4));
+            rgba($color-grey-light-1, 0.1),
+            rgba($color-grey-dark-3, 0.4));
     background-size: cover;
     transform: skewY(-9deg);
+    position: relative;
     margin-top: 20rem;
 
     @include respond(phone) {
@@ -189,4 +190,12 @@
         padding: 10rem 0;
     }
 
+    .contact-wrap {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        top: 40px;
+        left: 0;
+        width: 35%;
+    }
 }

@@ -9,7 +9,15 @@
   <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
   <link rel="stylesheet" href="css/main.css" />
   <link rel="shortcut icon" type="image/png" href="img/titan-concept-test0.png" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
   <title>Titan Concept</title>
+  <style>
+    #map {
+      width: 100%;
+      height: 65vh;
+    }
+  </style>
 </head>
 
 <body>
@@ -180,11 +188,11 @@
 
   <!--/ portfolio -->
 
-
   <!-- contact -->
 
   <section class="section-form" id="contact">
-    <div class="row">
+    <div id='map'></div>
+    <div class="row contact-wrap">
       <div class="contact">
         <div class="contact__form">
           <form method="POST" action="form/sendemail.php" class="form">
@@ -277,6 +285,13 @@
   <script src="js/jquery.min.js"></script>
   <!-- <script src="js/sal.js"></script> -->
   <script src="js/main.js"></script>
+   <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNramJjNzNhazFwZGcycXJ1YmE2YjlqNW8ifQ.s4AwywZijMnKUFGDLM3U0w';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug'
+      });
+  </script>
 </body>
 
 </html>

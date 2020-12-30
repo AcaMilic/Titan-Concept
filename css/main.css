@@ -2000,7 +2000,6 @@ nav .menu-icon {
 }
 
 .contact__form {
-  width: 50%;
   padding: 6rem;
 }
 
@@ -2029,6 +2028,7 @@ nav .menu-icon {
   background-size: cover;
   -webkit-transform: skewY(-9deg);
           transform: skewY(-9deg);
+  position: relative;
   margin-top: 20rem;
 }
 
@@ -2047,6 +2047,15 @@ nav .menu-icon {
   .section-form {
     padding: 10rem 0;
   }
+}
+
+.section-form .contact-wrap {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 40px;
+  left: 0;
+  width: 35%;
 }
 
 .navigation-padding {
