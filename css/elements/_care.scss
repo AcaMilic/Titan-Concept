@@ -27,6 +27,7 @@
         margin-top: 2.5rem;
         text-align: center;
         font-size: 5.5rem;
+        font-weight: bold;
     }
 
     .care_subtitle {
@@ -39,7 +40,69 @@
 }
 
 .titancare-paralax {
-    background: linear-gradient(rgb(51 51 51 / 30%), rgb(51 51 51 / 30%)), url(../../img/care.jpg) center/cover fixed no-repeat;
-    margin-bottom: 15rem;
+    background: linear-gradient(rgba($color-primary-dark, 0.7), rgba($color-primary-dark, 0.7)), url(../../img/care.jpg) center/cover fixed no-repeat;
     height: 400px;
+
+    .paralax-wrap {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .paralax-heading {
+            text-align: center;
+            font-size: 5.2rem;
+            font-weight: bold;
+            text-shadow: 0 0 5px #1d1d1d;
+            color: white;
+        }
+
+        .paralax-btn {
+            text-align: center;
+            padding: 1rem 3.8rem;
+            margin-top: 3rem;
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.titancare-numbers-wrap {
+    margin-bottom: 15rem;
+
+    .numbers-title-wrap {
+        background: $color-primary-dark;
+
+        .numbers-title {
+            margin: 0 auto;
+            max-width: 114rem;
+            font-size: 4rem;
+            padding: 1.6rem 0;
+            color: #b3b3b3;
+        }
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 114rem;
+        color: $color-primary-dark;
+
+        .single-number {
+
+            .digit {
+                text-align: center;
+                display: block;
+                min-width: 110px;
+                font-size: 8rem;
+            }
+
+            .number-title {
+                text-align: center;
+                font-size: 1.7rem;
+                min-width: 110px;
+            }
+        }
+    }
 }

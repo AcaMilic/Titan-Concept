@@ -1486,54 +1486,6 @@ nav .menu-icon {
   }
 }
 
-.titancare-banner {
-  margin: 0 auto;
-  max-width: 114rem;
-  padding-top: 550px;
-  padding-bottom: 120px;
-}
-
-.titancare-banner .portfolio_image_wrap {
-  position: absolute;
-  top: 55vh;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  height: 650px;
-  text-align: center;
-  z-index: 999;
-  width: 55vw;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 0px 23px 0px #292929;
-          box-shadow: 0px 0px 23px 0px #292929;
-}
-
-.titancare-banner .portfolio_image_wrap .portfolio_image {
-  width: 100%;
-}
-
-.titancare-banner .care_title {
-  margin-top: 2.5rem;
-  text-align: center;
-  font-size: 5.5rem;
-}
-
-.titancare-banner .care_subtitle {
-  font-size: 1.5rem;
-  max-width: 50vw;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 1.7rem;
-}
-
-.titancare-paralax {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(225, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url(../../img/care.jpg) center/cover fixed no-repeat;
-  background: linear-gradient(rgba(225, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../../img/care.jpg) center/cover fixed no-repeat;
-  margin-bottom: 15rem;
-  height: 400px;
-}
-
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   padding: 1.5rem 2.5rem;
@@ -2458,5 +2410,126 @@ nav .menu-icon {
 
 .scrollup:hover {
   color: #4272A5;
+}
+
+.titancare-banner {
+  margin: 0 auto;
+  max-width: 114rem;
+  padding-top: 550px;
+  padding-bottom: 120px;
+}
+
+.titancare-banner .portfolio_image_wrap {
+  position: absolute;
+  top: 55vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 650px;
+  text-align: center;
+  z-index: 999;
+  width: 55vw;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 23px 0px #292929;
+          box-shadow: 0px 0px 23px 0px #292929;
+}
+
+.titancare-banner .portfolio_image_wrap .portfolio_image {
+  width: 100%;
+}
+
+.titancare-banner .care_title {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.titancare-banner .care_subtitle {
+  font-size: 1.5rem;
+  max-width: 50vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1.7rem;
+}
+
+.titancare-paralax {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 34, 62, 0.7))), url(../../img/care.jpg) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 34, 62, 0.7), rgba(0, 34, 62, 0.7)), url(../../img/care.jpg) center/cover fixed no-repeat;
+  height: 400px;
+}
+
+.titancare-paralax .paralax-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.titancare-paralax .paralax-wrap .paralax-heading {
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #1d1d1d;
+  color: white;
+}
+
+.titancare-paralax .paralax-wrap .paralax-btn {
+  text-align: center;
+  padding: 1rem 3.8rem;
+  margin-top: 3rem;
+  font-size: 2.6rem;
+}
+
+.titancare-numbers-wrap {
+  margin-bottom: 15rem;
+}
+
+.titancare-numbers-wrap .numbers-title-wrap {
+  background: #00223e;
+}
+
+.titancare-numbers-wrap .numbers-title-wrap .numbers-title {
+  margin: 0 auto;
+  max-width: 114rem;
+  font-size: 4rem;
+  padding: 1.6rem 0;
+  color: #b3b3b3;
+}
+
+.titancare-numbers-wrap .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 114rem;
+  color: #00223e;
+}
+
+.titancare-numbers-wrap .numbers .single-number .digit {
+  text-align: center;
+  display: block;
+  min-width: 110px;
+  font-size: 8rem;
+}
+
+.titancare-numbers-wrap .numbers .single-number .number-title {
+  text-align: center;
+  font-size: 1.7rem;
+  min-width: 110px;
 }
 /*# sourceMappingURL=main.css.map */
