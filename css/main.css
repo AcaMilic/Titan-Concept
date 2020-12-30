@@ -273,6 +273,16 @@ body {
   }
 }
 
+.u-margin-top-big-big {
+  margin-top: 10rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .u-margin-top-big-big {
+    margin-bottom: 5rem;
+  }
+}
+
 .u-margin-top-dva {
   margin-top: 2rem;
 }
@@ -2861,38 +2871,42 @@ nav .menu-icon {
   margin-top: 1.7rem;
 }
 
-.titanarchives-paralax {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 34, 62, 0.3))), url(../../img/archive.jpg) center/cover fixed no-repeat;
-  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 34, 62, 0.3)), url(../../img/archive.jpg) center/cover fixed no-repeat;
+.titarchives-paralax {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 34, 62, 0.7))), url(../../img/archivee.jpg) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 34, 62, 0.7), rgba(0, 34, 62, 0.7)), url(../../img/archivee.jpg) center/cover fixed no-repeat;
   height: 400px;
-  margin-bottom: 13rem;
-  position: relative;
 }
 
-.titanarchives-paralax .content {
-  position: absolute;
+.titarchives-paralax .paralax-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.titarchives-paralax .paralax-wrap .paralax-heading {
   text-align: center;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 3rem;
-  font-size: 1.6rem;
-  color: #cdcfcb;
-  -webkit-box-shadow: 0 35px 65px -35px rgba(0, 0, 0, 0.55);
-          box-shadow: 0 35px 65px -35px rgba(0, 0, 0, 0.55);
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  font-size: 5.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #1d1d1d;
+  color: white;
 }
 
-.titanarchives-paralax .content .content-paragraph {
-  margin-bottom: 3rem;
-}
-
-.titanarchives-paralax .button-center {
+.titarchives-paralax .paralax-wrap .paralax-btn {
   text-align: center;
+  padding: 1rem 3.8rem;
+  margin-top: 3rem;
+  font-size: 2.6rem;
 }
 
 #about_me_gradnja {
@@ -3042,32 +3056,48 @@ nav .menu-icon {
 }
 
 .titangradnja-paralax {
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(244, 244, 237, 0.5)), to(rgba(205, 207, 203, 0.17))), url(../../img/machinery.jpg) center/cover fixed no-repeat;
-  background: linear-gradient(to right bottom, rgba(244, 244, 237, 0.5), rgba(205, 207, 203, 0.17)), url(../../img/machinery.jpg) center/cover fixed no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 34, 62, 0.7))), url(../../img/machinery.jpg) center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 34, 62, 0.7), rgba(0, 34, 62, 0.7)), url(../../img/machinery.jpg) center/cover fixed no-repeat;
   height: 400px;
-  margin-bottom: 13rem;
 }
 
-.titangradnja-paralax .content {
-  text-align: center;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 3rem;
-  color: #cdcfcb;
-  -webkit-box-shadow: 0 35px 65px -35px rgba(0, 0, 0, 0.55);
-          box-shadow: 0 35px 65px -35px rgba(0, 0, 0, 0.55);
-  background: rgba(0, 0, 0, 0.6);
+.titangradnja-paralax .paralax-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.titangradnja-paralax .button-center {
+.titangradnja-paralax .paralax-wrap .paralax-heading {
   text-align: center;
+  font-size: 5.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #1d1d1d;
+  color: white;
+}
+
+.titangradnja-paralax .paralax-wrap .paralax-btn {
+  text-align: center;
+  padding: 1rem 3.8rem;
+  margin-top: 3rem;
+  font-size: 2.6rem;
 }
 
 .gallery_header h3 {
   font-size: 3rem;
   text-align: center;
   color: #00223e;
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 
 .gallery_wrapper {

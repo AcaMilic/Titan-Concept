@@ -26,6 +26,13 @@
     }
 }
 
+.u-margin-top-big-big {
+    margin-top: 10rem;
+
+    @include respond(tab-port) {
+        margin-bottom: 5rem;
+    }
+}
 .u-margin-top-dva {
     margin-top: 2rem;
 }

@@ -149,36 +149,30 @@
         margin-top: 1.7rem;
     }
 }
+.titarchives-paralax {
+  background: linear-gradient(rgba($color-primary-dark, 0.7), rgba($color-primary-dark, 0.7)), url(../../img/archivee.jpg) center/cover fixed no-repeat;
+  height: 400px;
 
-.titanarchives-paralax {
-    background: linear-gradient(to right bottom,
-    rgba($color-black, 0.5),
-    rgba($color-primary-dark, 0.3)),
-    url(../../img/archive.jpg) center/cover fixed no-repeat;
-    height: 400px;
-    margin-bottom: 13rem;
-    position: relative;
+  .paralax-wrap {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
+      .paralax-heading {
+          text-align: center;
+          font-size: 5.2rem;
+          font-weight: bold;
+          text-shadow: 0 0 5px #1d1d1d;
+          color: white;
+      }
 
-
-    .content{
-        position: absolute;
-        text-align: center;
-        max-width: 1140px;
-        margin: 0 auto;
-        padding: 3rem;
-        font-size: 1.6rem;
-        color: $color-grey-light-3;
-        box-shadow: 0 35px 65px -35px rgba(0, 0, 0, .55);
-        background: rgba(0, 0, 0, .6);
-        @include absCenter;
-        .content-paragraph{
-          margin-bottom: 3rem;
-        }
-            }
-
-    .button-center{
-        // margin: 0 auto;s
-        text-align: center;
-    }
+      .paralax-btn {
+          text-align: center;
+          padding: 1rem 3.8rem;
+          margin-top: 3rem;
+          font-size: 2.6rem;
+      }
+  }
 }
