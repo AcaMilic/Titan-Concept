@@ -130,31 +130,32 @@
         url(../img/architecture3.jpg);
     background-size: 100%;
     border-radius: 3px;
+    background-size: cover;
     box-shadow: 1.2rem 1.5rem 4rem rgba($color-primary-dark, .4);
 
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg,
-                rgba($color-black, .9) 0%,
-                rgba($color-black, .7) 65%,
-                transparent 65%),
-            url(../img/laptop.jpg);
+        // background-image: linear-gradient(105deg,
+        //         rgba($color-black, .9) 0%,
+        //         rgba($color-black, .7) 65%,
+        //         transparent 65%),
+        //     url(../img/architecture3.jpg);
         background-size: cover;
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right,
-                rgba($color-primary-dark, .7) 0%,
-                rgba($color-black, .5) 100%),
-            url(../img/contactsmall.jpg);
+        // background-image: linear-gradient(to right,
+        //         rgba($color-primary-dark, .7) 0%,
+        //         rgba($color-black, .5) 100%),
+        //     url(../img/contactsmall.jpg);
     }
 
     &__form {
         // width: 50%;
-        padding: 6rem;
+        padding: 8rem;
 
-        @include respond(tab-land) {
-            width: 65%;
-        }
+        // @include respond(tab-land) {
+        //     width: 65%;
+        // }
 
         @include respond(tab-port) {
             width: 100%;
@@ -179,6 +180,8 @@
 
     @include respond(phone) {
         margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -197,5 +200,15 @@
         top: 40px;
         left: 0;
         width: 35%;
+
+        @include respond(tab-port) {
+            width: 60%;
+        }
+
+        @include respond(phone) {
+            position: unset;
+            width: 100%;
+            padding: 0;
+        }
     }
 }

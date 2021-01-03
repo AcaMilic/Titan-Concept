@@ -2171,32 +2171,19 @@ nav .menu-icon {
   background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 34, 62, 0.8) 30%, transparent 58%), url(../img/architecture3.jpg);
   background-size: 100%;
   border-radius: 3px;
+  background-size: cover;
   -webkit-box-shadow: 1.2rem 1.5rem 4rem rgba(0, 34, 62, 0.4);
           box-shadow: 1.2rem 1.5rem 4rem rgba(0, 34, 62, 0.4);
 }
 
 @media only screen and (max-width: 75em) {
   .contact {
-    background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 65%, transparent 65%), url(../img/laptop.jpg);
     background-size: cover;
   }
 }
 
-@media only screen and (max-width: 56.25em) {
-  .contact {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 34, 62, 0.7)), to(rgba(0, 0, 0, 0.5))), url(../img/contactsmall.jpg);
-    background-image: linear-gradient(to right, rgba(0, 34, 62, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url(../img/contactsmall.jpg);
-  }
-}
-
 .contact__form {
-  padding: 6rem;
-}
-
-@media only screen and (max-width: 75em) {
-  .contact__form {
-    width: 65%;
-  }
+  padding: 8rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -2225,6 +2212,13 @@ nav .menu-icon {
 @media only screen and (max-width: 37.5em) {
   .section-form {
     margin-top: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2246,6 +2240,20 @@ nav .menu-icon {
   top: 40px;
   left: 0;
   width: 35%;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-form .contact-wrap {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .section-form .contact-wrap {
+    position: unset;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .navigation-padding {
