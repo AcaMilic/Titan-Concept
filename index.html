@@ -12,6 +12,18 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
   <title>Titan Concept</title>
+  <script>
+ // Process translation
+    $(function() {
+      $('.translate').click(function() {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function(index, item) {
+          $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+      });
+    });
+  </script>
   <style>
     #map {
       width: 100%;
@@ -45,6 +57,9 @@
               <li><a href="titan_archives.html">TitanArchive</a></li>
               <li><a href="titan_gradnja.html">TitanGradnja</a></li>
             </ul>
+            <button id="en" class="translate">English</button>
+            <button id="km" class="translate">ខ្មែរ</button>
+            <p class="lang" key="home">Home</p>
           </li>
           <li><a href="#contact" class="">Contact</a></li>
           <li><a href="#"><img src="img/serbia.png" alt=""></a></li>
@@ -285,12 +300,40 @@
   <script src="js/jquery.min.js"></script>
   <!-- <script src="js/sal.js"></script> -->
   <script src="js/main.js"></script>
+  <script src="js/lang.js"></script>
    <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNramJjNzNhazFwZGcycXJ1YmE2YjlqNW8ifQ.s4AwywZijMnKUFGDLM3U0w';
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug'
       });
+  </script>
+<script type="text/javascript">
+    var arrLang = {
+      'en': {
+        'home': 'Home',
+        'about': 'About Us',
+        'contact': 'Contact Us',
+        'desc': 'This is my description'
+      },
+      'km': {
+        'home': 'ទំព័រដើម',
+        'about': 'អំពីយើង',
+        'contact': 'ទំនាក់ទំនងយើងខ្ញុំ',
+        'desc': 'នេះគឺជាអត្ថបទរបស់ខ្ញុំ'
+      }
+    };
+
+    // Process translation
+    $(function() {
+      $('.translate').click(function() {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function(index, item) {
+          $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+      });
+    });
   </script>
 </body>
 
