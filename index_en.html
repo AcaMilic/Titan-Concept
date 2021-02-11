@@ -5,23 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta author="Titan Concept team" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <!-- <link rel="stylesheet" href="css/sal/sal.css"> -->
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="shortcut icon" type="image/png" href="img/titan-concept-test-5.png" />
+  <link rel="shortcut icon" type="image/png" href="img/titan-concept-test0.png" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
   <title>Titan Concept</title>
+  <style>
+    #map {
+      width: 100%;
+      height: 65vh;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Header -->
 
-  <header class="second_header " id="header">
+  <header class="header" id="header">
     <div class="header__portfolio">
     </div>
-    <nav class="about_nav">
+    <nav>
       <div class="menu-icon">
         <i class="fa fa-bars fa-2x"></i>
       </div>
@@ -31,57 +36,48 @@
           <div class="logo">
             <img src="img/titan-c-logo-white.png" alt="logo">
           </div>
-          <li><a href="index.html" class="">Početna</a></li>
-          <li><a href="about_us.html" class="">O nama</a></li>
+          <li><a href="index_en.html" class="">Home</a></li>
+          <li><a href="about_us_en.html" class="">About us</a></li>
           <li class="services">
-            <a href="#" class="services-hover">Naše Kompanije</a>
+            <a href="#" class="services-hover">Our companies</a>
             <ul class="services-links">
-              <li><a href="titan_care.html">TitanCare</a></li>
-              <li><a href="titan_archives.html">TitanArchive</a></li>
-              <li><a href="titan_gradnja.html">TitanGradnja</a></li>
-            </ul>
+              <li><a href="titan_care_en.html">TitanCare</a></li>
+              <li><a href="titan_archives_en.html">TitanArchive</a></li>
+              <li><a href="titan_gradnja_en.html">TitanGradnja</a></li>
+            </ul> 
+            <h1 data-i18n="welcome"></h1>
           </li>
-          <li><a href="#contact" class="">Kontakt</a></li>
-          <!-- <li><a href="#"><img src="img/serbia.png" alt=""></a></li> -->
-          <li><a href="#"><img src="img/united-kingdom.png" alt=""></a></li>
+          <li><a href="#contact" class="">Contact</a></li>
+          <li><a href="index.html"><img src="img/serbia.png" alt=""></a></li>
+          <!-- <li><a href="index_en.html"><img src="img/united-kingdom.png" alt=""></a></li> -->
         </ul>
       </div>
     </nav>
 
     <div class="header__text-box">
-       <h1 class="heading-primary">
-        <!-- <span class="heading-primary--main">About us</span> -->
-        <span class="heading-primary--sub">O nama</span>
-      </h1> 
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">TITAN CONCEPT</span>
+       <!---<span class="heading-primary--sub">Welcome to Titan Concept</span>--> 
+        <span class="heading-primary--sub">Welcome to Titan Concept website</span>
+      </h1>
 
-      <!-- <a href="#portfolio" class="btn btn--whitee">Services</a>
-      <a href="#contact" class="btn btn--whitee">Contact</a> -->
+      <a href="#portfolio" class="btn btn--whitee">Our companies</a>
+      <a href="#contact" class="btn btn--whitee">Contact</a>
     </div>
-    <!-- <a href="#about"><i class="fas fa-chevron-down hide_on_scroll"></i></a> -->
+    <a href="#about_me"><i class="fas fa-chevron-down hide_on_scroll"></i></a>
   </header>
 
   <!-- /HEader -->
 
-
-
-
-
-
-
   <!-- About me -->
-  <!-- <section id="about_me">
+  <section id="about_me">
     <div class="row u-margin-top-minus-small">
       <div class="col-1-of-2">
-        <h2 class="heading-secondary-medium u-margin-bottom-small-three">About us</h2>
         <div class="content">
+          <h2 class="heading-secondary-medium u-margin-bottom-small-three">About us</h2>
           <p>
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum culpa, quidem in beatae quisquam quos facere tempora et rem corrupti!
+            The company TITAN CONCEPT was founded in 2020 in Belgrade. Following the market and the constant introduction of innovations in business around the world, a unique and new concept has emerged, with the idea that the services we provide are in one place. Titan Care, Titan Construction and Titan Archives were developed under th Titan Concept.
           </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita labore quas minima iure doloremque soluta omnis vitae ipsam repellat maxime.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum eius reprehenderit in officiis, repellat assumenda accusamus libero ullam eveniet!
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sunt sapiente nemo iste rem officiis aperiam atque aspernatur esse corporis?</p>
-
         </div>
       </div>
       <div class="col-1-of-2 logo_titan">
@@ -90,57 +86,15 @@
       </div>
     </div>
   </section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>  
-<br>   -->
+
   <!-- / About me -->
-
-
-
-
-
-
-
-  <!-- About me 02 -->
-
-  <section class="page-section clearfix about_us" id="about">
-    <div class="container">
-      <div class="intro">
-        <img class="intro-img img-fluid mb-3" src="img/architecture3.jpg" alt="">
-        <div class="intro-text bg-faded p-5">
-          <div class="content">
-            <h2 class="section-heading mb-4">
-              <span class="heading-secondary-medium u-margin-bottom-small-three"><b>O nama</b></span>
-            </h2>
-            <p>
-              Kompanija TITAN CONCEPT osnovnana je 2020. godine u Beogradu. Praćanjem
-              tržišta i stalnim uvođenjem novina u poslovanja širom sveta, nastao je jedinstven i nov
-              koncept, sa idejom da se usluge koje pružamo nađu na jednom mestu. Pri Titan
-              Conceptu, razvijeni su- Titan Care, Titan Gradnja i Titran Archives.
-            </p>
-
-  
-          </div>
-          <div>
-            <a href="#contact" class="btn btn--white">Kontaktirajte Nas</a>s
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <!-- Services -->
 
-  <!-- <section class="section-portfolio" id="portfolio">
+  <section class="section-portfolio" id="portfolio">
     <div class="u-center-text u-margin-bottom-big">
       <h2 class="heading-secondary u-medium-margin-top-big">
-        Services
+        Our companies
       </h2>
     </div>
 
@@ -152,18 +106,18 @@
               &nbsp;
             </div>
             <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--1">CARE</span>
+              <span class="card__heading-span card__heading-span--1">Titan Care</span>
             </h4>
             <div class="card__details">
-                <p>LOREM</p>
-                <p class='small__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias dolorum culpa quae rem repellat officiis quibusdam ullam possimus dolor.</p>
+                <p>About us</p>
+                <p class='small__text'>Titan Care is a company founded in 2020 within Titan Concept. We offer professional maintenance services for business premises and facilities, residential buildings, apartment cleaning as well as technical maintenance of residential buildings.</p>
             </div>
           </div>
           <div class="card__side card__side--back card__side--back-1">
             <div class="card__cta">
               <div class="card__portfolio-box">
-                <p class="card__portfolio-only">Lorem ipsum dolor sit amet.</p>
-                <p class="card__portfolio-value">Lorem</p>
+                <p class="card__portfolio-only">For more information visit Titan Care website.</p>
+
               </div>
               <a href="#" target="_blank" class="btn btn--white">Website</a>
             </div>
@@ -179,19 +133,19 @@
               &nbsp;
             </div>
             <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--2">CONSTRUCTION</span>
+              <span class="card__heading-span card__heading-span--2">Titan Gradnja</span>
             </h4>
             <div class="card__details">
-              <p>LOREM</p>
-              <p class='small__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias dolorum culpa quae rem repellat officiis quibusdam ullam possimus dolor.</p>
+              <p>About us</p>
+              <p class='small__text'>The history that led to the creation of TITAN GRADNJA begins more than 30 years ago, with the family company TRAKSIM, whose activity was the production and processing of plastics. </p>
             </div>
 
           </div>
           <div class="card__side card__side--back card__side--back-2">
             <div class="card__cta">
               <div class="card__portfolio-box">
-                <p class="card__portfolio-only">Lorem ipsum dolor sit amet.</p>
-                <p class="card__portfolio-value">Lorem</p>
+                <p class="card__portfolio-only">For more information visit Titan Gradnja website.</p>
+
               </div>
               <a href="#" target="_blank" class="btn btn--white">Website</a>
             </div>
@@ -207,18 +161,18 @@
               &nbsp;
             </div>
             <h4 class="card__heading">
-              <span class="card__heading-span card__heading-span--3">ARCHIVES</span>
+              <span class="card__heading-span card__heading-span--3">Titan Archives</span>
             </h4>
             <div class="card__details">
-              <p>LOREM</p>
-              <p class='small__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias dolorum culpa quae rem repellat officiis quibusdam ullam possimus dolor.</p>
+              <p>About us</p>
+              <p class='small__text'>The company was founded in 2020, in Belgrade, as part of the modern TITAN CONCEPT. He is the exclusive representative of the company "Inception".</p>
             </div>
           </div>
           <div class="card__side card__side--back card__side--back-3">
             <div class="card__cta">
               <div class="card__portfolio-box">
-                <p class="card__portfolio-only">Lorem ipsum dolor sit amet.</p>
-                <p class="card__portfolio-value">Lorem</p>
+                <p class="card__portfolio-only">For more information visit Titan Archives website.</p>
+
               </div>
               <a href="#" target="_blank" class="btn btn--white">Website</a>
             </div>
@@ -227,15 +181,15 @@
       </div>
     </div>
     </div>
-  </section> -->
+  </section>
 
   <!--/ portfolio -->
 
-
   <!-- contact -->
 
-  <!-- <section class="section-form" id="contact">
-    <div class="row">
+  <section class="section-form" id="contact">
+    <div id='map'></div>
+    <div class="row contact-wrap">
       <div class="contact">
         <div class="contact__form">
           <form method="POST" action="form/sendemail.php" class="form">
@@ -260,14 +214,14 @@
 
             <div class="form__group">
               <br>
-              <button class="btn btn--whitee" type="submit" id="sendForm" value="Submit" name="submit">Send Message</button>
+              <button class="btn btn--whitee" type="submit" id="sendForm" value="Submit" name="submit">Send a message</button>
               <p id="success" class="greenSuccess">Message sent!</p>
             </div>
           </form>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!--/ contact -->
 
@@ -276,10 +230,10 @@
     <div class="row navigation-padding">
       <div class="col-1-of-4">
         <ul>
-          <li><a href="index.html">Početna</a></li>
-          <li><a href="about_us.html">O Nama</a></li>
-          <li><a href="#portfolio">Naše Kompanije</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="index_en.html">Home</a></li>
+          <li><a href="about_us_en.html">About us</a></li>
+          <li><a href="#portfolio">Our companies</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="col-1-of-4">
@@ -293,7 +247,7 @@
 
         </div>
       </div>
-      <div class="col-1-of-4">
+<!---      <div class="col-1-of-4">
         <div class="phone-and-mail">
           <ul>
             <li><a href="#">Terms and Conditions</a></li>
@@ -301,6 +255,7 @@
           </ul>
         </div>
       </div>
+-->
       <div class="col-1-of-4 copy">
         <h4>Copyright &copy; Titan Concept 2020, All rights reserved. </h4>
       </div>
@@ -324,14 +279,20 @@
   <a href="#header" class="scrollup"><i class="far fa-arrow-alt-circle-up"></i></a>
   <!-- Day and night -->
   <div class="daynight"></div>
-  <script src="js/jquery.min.js"></script>
 
-  <!-- <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>
   <!-- <script src="js/sal.js"></script> -->
   <script src="js/main.js"></script>
+  <script src="js/lang.js"></script>
+   <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGl0YW5jb25jZXB0IiwiYSI6ImNramJjNzNhazFwZGcycXJ1YmE2YjlqNW8ifQ.s4AwywZijMnKUFGDLM3U0w';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/titanconcept/ckjbcqywna01x19p373n0jeug'
+      });
+  </script>
+  <script src="./js/main-i18n.js"></script>
 </body>
-
 </html>
 
 
