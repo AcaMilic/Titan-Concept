@@ -3287,4 +3287,9 @@ nav .menu-icon {
     margin: 0 auto;
   }
 }
+@media (max-width:640px) {
+  .header {
+    background-attachment:initial;
+  }
+}
 /*# sourceMappingURL=main.css.map */
