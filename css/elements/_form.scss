@@ -174,7 +174,7 @@
             rgba($color-grey-light-1, 0.1),
             rgba($color-grey-dark-3, 0.4));
     background-size: cover;
-    transform: skewY(-9deg);
+    transform: skewY(-3deg);
     position: relative;
     margin-top: 20rem;
 
@@ -186,7 +186,7 @@
 
 
     &>* {
-        transform: skewY(9deg);
+        transform: skewY(3deg);
     }
 
     @include respond(tab-port) {

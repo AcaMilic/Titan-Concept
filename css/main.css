@@ -2211,8 +2211,8 @@ nav .menu-icon {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(247, 247, 247, 0.1)), to(rgba(51, 51, 51, 0.4)));
   background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.1), rgba(51, 51, 51, 0.4));
   background-size: cover;
-  -webkit-transform: skewY(-9deg);
-          transform: skewY(-9deg);
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
   position: relative;
   margin-top: 20rem;
 }
@@ -2231,8 +2231,8 @@ nav .menu-icon {
 }
 
 .section-form > * {
-  -webkit-transform: skewY(9deg);
-          transform: skewY(9deg);
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -2286,8 +2286,8 @@ nav .menu-icon {
   padding: 10rem 0;
   background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 34, 62, 0.9))), url(../img/backgroundsecond.jpg);
   background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.9), rgba(0, 34, 62, 0.9)), url(../img/backgroundsecond.jpg);
-  -webkit-transform: skewY(-9deg);
-          transform: skewY(-9deg);
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -2296,8 +2296,8 @@ nav .menu-icon {
 }
 
 .navigation-footer > * {
-  -webkit-transform: skewY(9deg);
-          transform: skewY(9deg);
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
 }
 
 .navigation-footer ul {
