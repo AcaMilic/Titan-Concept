@@ -1172,7 +1172,15 @@ nav .logo img {
 
 @media only screen and (max-width: 56.25em) {
   nav .logo {
-    top: -1rem;
+    top: -2rem;
+  }
+  nav .logo img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  nav .logo {
     margin-left: 2rem;
   }
 }
@@ -3285,11 +3293,6 @@ nav .menu-icon {
     width: 100%;
     height: 50vh;
     margin: 0 auto;
-  }
-}
-@media (max-width:640px) {
-  .header {
-    background-attachment:initial;
   }
 }
 /*# sourceMappingURL=main.css.map */

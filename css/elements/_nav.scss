@@ -132,9 +132,16 @@ nav {
         }
 
         @include respond(tab-port) {
-            top: -1rem;
-            //    width: 20rem;
+            top: -2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+        @include respond(tab-land) {
+
             margin-left: 2rem;
+
         }
     }
 
